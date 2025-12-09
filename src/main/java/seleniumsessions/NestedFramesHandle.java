@@ -12,6 +12,10 @@ public class NestedFramesHandle {
         driver.get("https://selectorshub.com/iframe-scenario/");
 
         // page --> f1 --> f2 --> f3 -- ele
+        //Page is the main or 1st web page, inside it f1 frame is there, inside f1 frame 
+        //f2 frame is there, inside f2 frame f3 frame is there, 
+        //inside f3 frame the element is there.
+        
         // driver.switchTo().frame("pact1")
         // .switchTo().frame("pact2")
         // .switchTo().frame("pact3")
