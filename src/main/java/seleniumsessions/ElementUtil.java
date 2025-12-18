@@ -488,6 +488,9 @@ public class ElementUtil {
 	}
 
 	// wait for frame:
+	//Below until() method is returning webdriver but we didn't change the return type
+	//As the driver is already available in the calling class, ans the same driver will be updated to 
+	//point inside the frame
 	public void waitForFrameUsingLocatorAndSwitchToIt(By frameLocator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));

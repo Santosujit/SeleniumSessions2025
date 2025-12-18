@@ -18,8 +18,8 @@ public class LoginPageTest {
 		By password = By.id("input-password");
 
 		ElementUtil elUtil = new ElementUtil(driver);// we are passing the driver to ElementUtil class
-		elUtil.doSendkeys(emailID, "test@gmail.com");
-		elUtil.doSendkeys(password, "test@123");
+		elUtil.doSendKeys(emailID, "test@gmail.com");
+		elUtil.doSendKeys(password, "test@123");
 		Thread.sleep(1000);
 
 		brUtil.quitBrowser();

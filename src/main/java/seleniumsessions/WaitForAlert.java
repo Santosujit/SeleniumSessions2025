@@ -18,7 +18,7 @@ public class WaitForAlert {
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 
-        driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();?
+        driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
         //This is a javascript based alert
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

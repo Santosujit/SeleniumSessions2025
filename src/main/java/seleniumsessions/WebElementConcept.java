@@ -18,8 +18,8 @@ public class WebElementConcept {
 		By password = By.id("input-password");// No call to server while creating By locator
 
 		ElementUtil elUtil = new ElementUtil(driver);// while creating the object,1st constructor 'll be called
-		elUtil.doSendkeys(emailID, "test@gmail.com");
-		elUtil.doSendkeys(password, "test@123");
+		elUtil.doSendKeys(emailID, "test@gmail.com");
+		elUtil.doSendKeys(password, "test@123");
 
 	}
 

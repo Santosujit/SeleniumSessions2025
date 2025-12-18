@@ -61,8 +61,7 @@ public class ExplicitWait {
     public static WebElement waitForElementPresence(By locator, int timeOut) {// this only checks presence in DOM not
                                                                               // visibility on the UI
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
-        // return wait.until(ExpectedConditions.presenceOfElementLocated(locator));until
-        // method will return WebElement
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     /**
